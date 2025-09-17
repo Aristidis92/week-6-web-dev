@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Interactive Features</h1>
+        <p>Explore various JavaScript event handling and interactive elements</p>
+    </header>
+
+    <main>
+        <section id="event-handling">
+            <h2>Event Handling Examples</h2>
+            
+            <div class="interactive-area">
+                <h3>Click Events</h3>
+                <button id="click-btn">Click Me!</button>
+                <p id="click-output">Button not clicked yet.</p>
+            </div>
+            
+            <div class="interactive-area">
+                <h3>Mouse Events</h3>
+                <div class="color-box" id="color-box"></div>
+                <p>Hover over the box to change its color</p>
+            </div>
+            
+            <div class="interactive-area">
+                <h3>Keyboard Events</h3>
+                <input type="text" id="key-input" placeholder="Type here...">
+                <div class="key-display" id="key-display">Last key pressed will appear here</div>
+            </div>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-area">
+                <h3>Light/Dark Mode Toggle</h3>
+                <button id="theme-toggle">Toggle Dark Mode</button>
+            </div>
+            
+            <div class="interactive-area">
+                <h3>Counter Game</h3>
+                <div class="counter-display" id="counter">0</div>
+                <button id="increment-btn">Increment</button>
+                <button id="decrement-btn">Decrement</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            
+            <div class="interactive-area">
+                <h3>FAQ Section</h3>
+                <div class="faq-item">
+                    <div class="faq-question">What is JavaScript? <span>+</span></div>
+                    <div class="faq-answer">JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are event listeners? <span>+</span></div>
+                    <div class="faq-answer">Event listeners are functions that wait for a specific event to occur on a particular element, then execute code in response.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is DOM manipulation? <span>+</span></div>
+                    <div class="faq-answer">DOM manipulation refers to using JavaScript to modify the content, structure, or style of a web page dynamically.</div>
+                </div>
+            </div>
+            
+            <div class="interactive-area">
+                <h3>Dropdown Menu</h3>
+                <div class="dropdown">
+                    <button>Select an Option</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                        <a href="#">Option 4</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="interactive-area">
+                <h3>Tabbed Interface</h3>
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" id="tab1">
+                            <h4>Content for Tab 1</h4>
+                            <p>This is the content for the first tab.</p>
+                        </div>
+                        <div class="tab-panel" id="tab2">
+                            <h4>Content for Tab 2</h4>
+                            <p>This is the content for the second tab.</p>
+                        </div>
+                        <div class="tab-panel" id="tab3">
+                            <h4>Content for Tab 3</h4>
+                            <p>This is the content for the third tab.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+                    <div class="error" id="name-error">Please enter a valid name (min 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with one number and one special character</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" rows="4"></textarea>
+                    <div class="error" id="message-error">Message must be between 10 and 200 characters</div>
+                </div>
+                
+                <button type="submit">Submit Form</button>
+                
+                <div class="success-message" id="success-message">
+                    Form submitted successfully!
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Interactive Features Demo &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
